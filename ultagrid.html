@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ultragrid</title>
+   <style>
+    *{
+        font-family: "Segoe UI";
+    }
+    .sec{
+      width:50vw;
+      margin:auto;
+    }
+     .next{
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+    }
+    .inl{
+       margin: 5px;
+    }
+    .lo{
+ height:50px;
+ width:50px;
+    }
+.box{
+    background-color: grey;
+    /* height:250px;
+    width:250px;
+    padding: 10px;
+    margin: 10px; */
+}
+ .best{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:20px;
+
+}
+.items{
+    height: 200px;
+    width:250px;
+    border:none;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+.item1 .para{
+    height:80vw;
+    width:10vh;
+}
+.items a{
+    text-decoration: none;
+    color:white;
+
+}
+.items button{
+ 
+    background-color: #28a745;
+    border:1px solid rgb(49, 192, 49);
+    border-radius: 5px;
+    padding:10px 15px
+}
+.first{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    margin: 40px;
+
+}
+.first span {
+    font-size: 40px;
+}
+.first a{
+    text-decoration: none;
+    color:white;
+}
+.first button{
+    background-color: rgb(89, 201, 201);
+    border-style: none;
+    height: 40px;
+    width:200px;
+    padding: 2px 6px;
+    font-size: 17px;
+}
+.first p{
+    font-size: 20px;
+    width:49vw;
+    text-align: center;
+}
+.first img{
+    margin:0px 25px;
+}
+/* .sec{
+    max-width: 90vw;
+    margin:auto;
+} */
+ .nav{
+    display:flex;
+    justify-content: space-evenly;
+  }
+  .second img{
+    margin-top: 10px;
+    height: 50px;
+    width:50px;
+  }
+  .third img{
+    height: 50px;
+    width:50px;
+    margin-top: 10px;
+  }
+  .navi{
+    display:flex;
+    font-family: 'Segoe UI';
+  }
+  .navi ul{
+  list-style-type: none;
+  display:flex;
+  }
+  .navi li{
+    padding: 10px;
+ display: flex;
+ align-items: center;
+ cursor: pointer;
+  }
+  .navi li a{
+    text-decoration: none;
+    color:black;
+  }
+ .divi{
+    width:30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+  .next{
+    display:flex;
+  }
+
+@media screen and (max-width:1100px){
+    .best{
+        grid-template-columns:1fr;
+    
+    }
+    .sec{
+        width: 60vw;
+        margin: auto;
+    }
+    
+ 
+}
+   @media screen and (max-width:425px){
+        .sec{
+            width:70vw;
+        }
+        .next{
+            flex-wrap:wrap;
+        }
+    }
+
+   </style>
+</head>
+<body>
+    <div  class="nav">
+        <div  class="second"><img src="logo icon.png"></div> 
+            <div class="navi"><ul >
+             <li ><a href="/">Resources</a><img src="arrowdown.png"></li>
+             <li ><a href="/">For Business</a><img src="arrowdown.png"></li>
+              <li ><a href="/">Products</a><img src="arrowdown.png"></li>
+             <li ><a href="/">Support</a><img src="arrowdown.png"></li>
+              <li><a  href="/">Our Company</a><img src="arrowdown.png"></li>
+             
+            </ul>
+           <span class="divi"><img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png" alt=""></span> 
+        </div> 
+             <!-- <div class="third"><img src="icon a.jpg" ></div> -->
+       
+     </div>
+    <section class="first"> 
+        <span> Download <b>UltraEdit</b> for Windows <img width="100px" src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png"></span>
+       <div> <P>Download and try UltraEdit before you buy it! This download includes the full Windows version of the text editor.</P></div>
+      <div><button  ><a  href="ue_english_64.exe">Download mac or linux</a></button></div>  
+      </section>
+  
+   <section class="sec">
+   <div class="next">
+    <span><img src="logo icon.png" class="inl lo"></span>
+    <span><h2 class="inl">UltraEdit Linux </h2></span>
+    <span><p class="inl"> v2023.0, released 2024-10-16)</p></span>
+  </div>
+      <div class="best">
+<div class="items item1">
+    <h3>English</h3>
+    <p><pre>  </pre></p>
+    <button ><a href="ue_english_64.exe">Download 64 bit</a></button>
+    <p>SHA256</p>
+    <!-- <p class="para">8229160C746CE6364F56DFF39CE083C064BF9A43A67C786976C63AF0EB8E6259</p> -->
+</div>
+<div class="items item2">    <h3>Deutsch</h3>
+    <p>German</p>
+    <button ><a href="ue_english_64.exe">Download 64 bit</a></button>
+    <p>SHA256</p>
+    <!-- <p class="para">8229160C746CE6364F56DFF39CE083C064BF9A43A67C786976C63AF0EB8E6259</p> -->
+</div>
+<div class="items item3">    <h3>Italiano</h3>
+    <p>Italian</p>
+    <button ><a href="ue_english_64.exe">Download 64 bit</a></button>
+    <p>SHA256</p>
+    <!-- <p class="para">8229160C746CE6364F56DFF39CE083C064BF9A43A67C786976C63AF0EB8E6259</p> -->
+</div>
+<div class="items item4">    <h3>Español</h3>
+    <p>Spanish</p>
+    <button ><a href="ue_english_64.exe">Download 64 bit</a></button>
+    <p>SHA256</p>
+    <!-- <p class="para">8229160C746CE6364F56DFF39CE083C064BF9A43A67C786976C63AF0EB8E6259</p> -->
+</div>
+<div class="items item5">    <h3>français</h3>
+    <p>French</p>
+    <button ><a href="ue_english_64.exe">Download 64 bit</a></button>
+    <p>SHA256</p>
+    <!-- <p class="para">8229160C746CE6364F56DFF39CE083C064BF9A43A67C786976C63AF0EB8E6259</p> -->
+</div>
+<div class="items item6">    <h3>Português brasileiro</h3>
+    <p>Brazilian Portuguese</p>
+    <button ><a href="ue_english_64.exe">Download 64 bit</a></button>
+    <p>SHA256</p>
+    <!-- <p class="para">8229160C746CE6364F56DFF39CE083C064BF9A43A67C786976C63AF0EB8E6259</p> -->
+</div>
+<div class="items item7">    <h3>華語</h3>
+    <p>Traditional Chinese</p>
+    <button ><a href="ue_english_64.exe">Download 64 bit</a></button>
+    <p>SHA256</p>
+    <!-- <p class="para">8229160C746CE6364F56DFF39CE083C064BF9A43A67C786976C63AF0EB8E6259</p> -->
+</div>
+
+
+      </div>
+    </section>
+  
+       
+    
+</body>
+</html>
