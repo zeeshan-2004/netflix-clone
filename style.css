@@ -1,35 +1,145 @@
-
-.main{
+.main {
     background-image: url("background.jpg");
-    height:70vh;
-position:relative;
-
-}
- *{
-padding: 0px;
-margin: 0px;
-}
-.box{
-
-    height:100%;
-    width:100%;
-    opacity: 0.4;
-    background-color: black;
+    height: 600px;
+width:100vw;
+    background-size: max(100vw, 1200px);
+    background-position: center center;
+    background-repeat: no-repeat;
     position: relative;
-}
-.main nav{
-background-color: aqua;
-position: absolute;
 
 }
-.main nav img{
-width:100px;
-height:100px;
-background-color: none;
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+body{
+    overflow-x: hidden;
+    width:100vw;
+    background-color: black;
+}
+
+
+.box {
+    height: 600px;
+    width: 100vw;
+    position: absolute;
+    top:0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1.8;
+   
+}
+
+.navi {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:80vw;
+    margin:auto;
+    text-align: center;
+    /* margin: 10px 50px; */
+
+    padding: 10px;
+    background-color: rgb(22 21 21 / 0%);
+    z-index: 10;
+    /* filter: brightness(0) saturate(100%) invert(17%) sepia(83%) saturate(5293%) hue-rotate(358deg) brightness(95%) contrast(110%);
+    background:none; */
+    /* background: rgba(0, 0, 0, 0.7); Add background to navbar for visibility */
+}
+
+.main .navi img {
+    width: 150px;
+    filter: brightness(0) saturate(100%) invert(17%) sepia(83%) saturate(5293%) hue-rotate(358deg) brightness(95%) contrast(110%);
+    background: none; 
+    z-index: 10;
+}
+
+
+
+.first {
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    font-weight: bolder;
+    z-index: 10;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    background: none; /* Remove unwanted background effects */
+    text-align: center;
+    padding: 0px 20px;
+    margin:auto;
+
+}
+.btn{
+    padding:3px 8px;
+    background-color:white;
+    font-weight: bold;
+}
+.btn-fir{
+background-color: red;
+color:white;
+}
+.btn-sec{
+    background-color: red;
+    color: white;
+    padding: 2px 12px;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.first input{
+    padding: 5px 50px 5px 15px;
+    background-color: rgba(23, 23, 23, 0.2);
+    font-size: 12px;
+    border-radius: 4px;
+    font-weight: 700;
+    color:white;
+    border:1px solid rgba(145, 144, 144, 0.7) ;
+    margin-top: 10px;
+}
+.first-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.first >:first-child{
+    font-size: 56px;
+    font-weight: 900;
+    text-align: center;
+}
+.first >:nth-child(2){
+    font-size: 56px;
+    font-weight: 900;
+    text-align: center;
+  
+}
+
+.first > :nth-child(3){
+    font-size: 25px;
+    font-weight: 400;
+    margin:5px;
+    text-align: center;
+}
+.first > :nth-child(4){
+    font-size: 25px;
+    font-weight: 400;
+    margin-top:25px;
+    text-align: center;
+}
+body{
+    background-color: black;
 }
 .he{
-    margin-left:50px;
     width:60vw;
+    margin:auto;
     color:white;
     text-align: center;
 }
@@ -40,26 +150,34 @@ background-color: none;
     width: 80vw;
     margin:auto ;
     color: white;
+    /* flex-wrap: wrap; */
+    padding: 30px 0px;
+    text-align: center;
     
 }
+/* @media screen and
 .tvimage{
     position: relative;
-}
+} */
 .tvimage img{
 width:555px;
-background-color:none;
-position: relative;
+position:relative;
 z-index: 10;
 }
-body{
-    background-color: black;
-}
+
+
 .tvimage video{
-    position: absolute;
+    position:absolute;
+    top:51px;
+    right:0;
+    width:500px;
+    overflow:hidden;
 
-    top: 51px;
-    right: 0px;
+    
 
+    }
+    .tvimage{
+        position:relative;
     }
 
     .sec > div :nth-child(1){
@@ -102,19 +220,20 @@ body{
     color:white;
    }
    footer{
-    color:white;
+    color:#ffffffb3;
     max-width: 60vw;
     margin:auto;
    }
    .footer{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
+    gap:10px;
    }
    footer .items{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 
    }
    .question{
@@ -123,6 +242,235 @@ body{
    }
    .items a{
     text-decoration: none;
-    color:white;
+    color:#ffffffb3
+    ;
     font-size: 16px;
    }
+   .sep{
+    background-color:rgb(46, 44, 44);
+    z-index: 10;
+    height:10px;
+    /* position: relative; */
+
+   }
+
+ @media screen and (max-width:425px){
+  .first{
+   padding: 0px;
+   margin: auto;
+  }
+  .sec{
+    flex-wrap: wrap;
+  }
+  .box{
+    background-size: cover;
+    margin:auto;
+    width:100vw;
+  }
+  .main{
+    background-color: blue;
+    width: 100vw;
+    margin: auto;
+  }
+  .footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 40px;
+    gap:40px;
+   }
+   .tvimage img{
+    width:250px;
+    position:relative;
+    z-index: 10;
+    }
+    
+    
+    .tvimage video {
+        position: absolute;
+        top: 32px;
+        right: 0;
+        width: 221px;
+        overflow: hidden;
+    }
+    .first >:first-child{
+        font-size: 32px;
+      
+    }
+    .first >:nth-child(2){
+        font-size: 32px;
+     
+      
+    }
+    
+    .first > :nth-child(3){
+        font-size: 14px;
+        font-weight: 400;
+        margin:5px;
+        text-align: center;
+    }
+    .first > :nth-child(4){
+        font-size: 14px;
+        font-weight: 400;
+        margin-top:25px;
+        text-align: center;
+    }
+    .navi{
+        width: 90vw;
+    }
+    .first-btn{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        justify-content: center;
+        align-items: center;
+        
+    
+    
+    }
+    body{
+        overflow-x: hidden;
+        
+    }
+  /* body{
+    margin:auto;
+    width:100vw;
+  } */
+ 
+ }
+    
+ @media screen and (max-width:768px){
+    .first{
+        padding: 0px;
+        margin: auto;
+       }
+       .sec{
+         flex-wrap: wrap;
+       }
+       .box{
+         background-size: cover;
+         margin:auto;
+         width:100vw;
+       }
+       .main{
+         background-color: blue;
+         width: 100vw;
+         margin: auto;
+       }
+       .footer{
+         display:grid;
+         grid-template-columns: 1fr 1fr;
+         padding-bottom: 40px;
+         gap:40px;
+        }
+    .sec{
+        flex-wrap: wrap;
+    }
+    .sec > div :nth-child(1){
+        font-size: 32px;
+       
+    }
+    .sec > div :nth-child(2){
+        font-size: 18px;
+    }
+    .first >:first-child{
+        font-size: 32px;
+   
+    }
+    .first >:nth-child(2){
+        font-size: 32px;
+       
+      
+    }
+    
+    .first > :nth-child(3){
+        font-size: 18px;
+        
+       
+    }
+    .first > :nth-child(4){
+        font-size: 18px;
+    
+    }
+    .first{
+        padding: 20px;
+    }
+    .faqs h2{
+        font-size:32px ;
+    }
+    .navi{
+        width: 90vw;
+    }
+    .first-btn{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        justify-content: center;
+        align-items: center;
+        
+    
+    
+    }
+    .tvimage img{
+        width:250px;
+        position:relative;
+        z-index: 10;
+        }
+        
+        
+        .tvimage video {
+            position: absolute;
+            top: 32px;
+            right: 0;
+            width: 221px;
+            overflow: hidden;
+        }
+        body{
+            overflow-x: hidden;
+            
+        }
+ }
+ @media screen and (max-width:1024px){
+    body{
+        overflow-x: hidden;
+        
+    }
+
+ }
+ /* @media screen and (max-width:375px){
+ 
+    .first >:first-child{
+        font-size: 56px;
+        font-weight: 900;
+        text-align: center;
+    }
+    .first >:nth-child(2){
+        font-size: 56px;
+        font-weight: 900;
+        text-align: center;
+      
+    }
+    
+    .first > :nth-child(3){
+        font-size: 25px;
+        font-weight: 400;
+        margin:5px;
+        text-align: center;
+    }
+    .first > :nth-child(4){
+        font-size: 25px;
+        font-weight: 400;
+        margin-top:25px;
+        text-align: center;
+    }
+    footer{
+        color:#ffffffb3;
+        max-width: 80vw;
+        margin:auto;
+       }
+   
+       /* body{
+        margin:auto;
+        width:100vw;
+      } */
+       
+ } */
